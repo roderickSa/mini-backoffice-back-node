@@ -82,8 +82,3 @@ This template is though to use it in a hexagonal architecture for a backend micr
 
 - Run `npm run test` to run all tests.
 
-## How to log?
-
-### Documentation
-
-https://github.com/justomx/nodejs-commons/tree/main/packages/logger

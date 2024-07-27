@@ -12,7 +12,7 @@ export default {
     name: 'mini-backoffice-back-node',
     logstash: {
       appName: '@project_name@',
-      host: 'logstash.justo.it',
+      host: 'logstash.it',
       port: 5000,
       level: 'info',
     },

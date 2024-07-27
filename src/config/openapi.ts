@@ -17,7 +17,7 @@ export const openApi = createDocument({
       description: 'Local server',
     },
     {
-      url: 'http://stag.justo.cloud/name-ms',
+      url: 'http://stag.cloud/name-ms',
       description: 'Staging server',
     },
   ],

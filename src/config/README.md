@@ -28,7 +28,7 @@ If in our project we need to make more configurations with external libraries, l
         description: 'Local server',
       },
       {
-        url: 'http://stag.justo.cloud/name-ms',
+        url: 'http://stag.cloud/name-ms',
         description: 'Staging server',
       },
     ],
