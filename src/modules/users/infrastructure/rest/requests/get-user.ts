@@ -9,7 +9,7 @@ export const GetUserRequest = z.object({
 
 export const GetUserSuccessResponse = z.object({
   id: z.string().openapi({ description: 'User id', example: '1234' }),
-  username: z.string().openapi({ description: 'Username of the user', example: 'facundocarballo' }),
+  name: z.string().openapi({ description: 'Name of the user', example: 'facundocarballo' }),
   password: z.string().openapi({ description: 'Password of the user', example: '123456789' }),
 });
 

@@ -6,7 +6,7 @@ import {
 import { ZodOpenApiPathsObject } from 'zod-openapi';
 
 export const getUserOpenApi: ZodOpenApiPathsObject = {
-  'api/users/{userId}': {
+  'api/user/{userId}': {
     get: {
       requestParams: {
         path: GetUserPath.required(),

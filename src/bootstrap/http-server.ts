@@ -26,7 +26,7 @@ export function bootstrapHttpServer(userRouter: UserRouter): http.Server {
   }
 
   // Routers
-  app.use('/api/users', userRouter.router, parseZodErrors);
+  app.use('/api/user', userRouter.router, parseZodErrors);
 
   return http.createServer(app);
 }

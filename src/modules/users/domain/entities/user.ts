@@ -1,16 +1,12 @@
-import { randomUUID } from 'crypto';
-
 export class User {
-  public id: string;
   constructor(
-    public username: string,
+    public id: string,
+    public name: string,
+    public email: string,
+    public email_verified_at: string,
     public password: string,
-    id?: string,
-  ) {
-    if (!id) {
-      this.id = randomUUID();
-    } else {
-      this.id = id;
-    }
-  }
+    public role: string,
+    public created_at: string,
+    public updated_at: string,
+  ) {}
 }

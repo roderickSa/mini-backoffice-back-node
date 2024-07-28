@@ -8,7 +8,7 @@ export class CreateUserUseCase implements UseCase<CreateUserUseCaseInput, User> 
   constructor(private userRepository: UserRepository) {}
 
   async execute(input: CreateUserUseCaseInput): Promise<User> {
-    const user = await this.userRepository.save(input.username, input.password);
+    const user = await this.userRepository.save(input.name, input.password);
     if (!user) {
       throw new UserCantCreate();
     }

@@ -7,8 +7,8 @@ This template is intended to be used in the development of a backend microservic
 For example, in this template you will find a usage example using a single user resource.
 This example microservice exposes two endpoints where the client can:
 
-- `/api/users` - `GET` Get a pre-registered user.
-- `/api/users` - `POST` Create a new user.
+- `/api/user` - `GET` Get a pre-registered user.
+- `/api/user` - `POST` Create a new user.
 
 However, if there is a need to use more than one resource, a `modules` folder can be created within the `src` folder. This would result in a project structure similar to this:
 

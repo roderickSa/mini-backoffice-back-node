@@ -15,7 +15,7 @@ import { extendZodWithOpenApi } from 'zod-openapi';
 extendZodWithOpenApi(z);
 
 export const CreateUserRequest = z.object({
-  username: z.string().openapi({ description: 'Some username', example: 'facundocarballo' }),
+  name: z.string().openapi({ description: 'Some name', example: 'facundocarballo' }),
   password: z.string().min(6).openapi({ description: 'Some password', example: '123456' }),
 });
 ```
@@ -26,7 +26,7 @@ When executing a `POST` method on this endpoint `/api/users` with this `request 
 
 ```JSON
 {
-    "username": "facu",
+    "name": "facu",
     "password": "12345"
 }
 ```

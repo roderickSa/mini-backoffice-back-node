@@ -7,7 +7,7 @@ import {
 import { ZodOpenApiPathsObject } from 'zod-openapi';
 
 export const createUserOpenApi: ZodOpenApiPathsObject = {
-  '/api/users': {
+  '/api/user': {
     post: {
       requestBody: {
         content: {

@@ -10,8 +10,8 @@ import findFreePorts from 'find-free-ports';
 import { BootstrapAppConfig } from '#bootstrap/app-config';
 import { baseUrl } from '../../../../shared/infrastructure/rest/base-url';
 
-describe("E2E - '/users'", () => {
-  const endpoint = '/users';
+describe("E2E - '/user'", () => {
+  const endpoint = '/user';
 
   let port: number;
   let server: http.Server;
@@ -42,11 +42,11 @@ describe("E2E - '/users'", () => {
 
   describe('POST - Create User', () => {
     test('should create a valid user', async () => {
-      const input = new CreateUserUseCaseInput('facu', '123456789');
+      const input = new CreateUserUseCaseInput('roder', '1345678');
       const response = await httpClient.post(endpoint).send(input);
       expect(response.status).toBe(StatusCodes.CREATED);
     });
-
+    
     test("shouldn't create a valid user", async () => {
       const response = await httpClient.post(endpoint).send(CreateUserUserCaseInputMother.any());
       expect(response.status).toBe(StatusCodes.UNAUTHORIZED);

@@ -12,8 +12,8 @@ export class CreateUserController implements Controller {
   constructor(private createUserUseCase: CreateUserUseCase) {}
   async execute(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const { username, password } = CreateUserRequest.parse(req.body);
-      const input = new CreateUserUseCaseInput(username, password);
+      const { name, password } = CreateUserRequest.parse(req.body);
+      const input = new CreateUserUseCaseInput(name, password);
 
       const user = await this.createUserUseCase.execute(input);
 

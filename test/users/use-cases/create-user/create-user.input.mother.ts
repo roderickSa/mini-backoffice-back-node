@@ -3,12 +3,12 @@ import { ConstantsMother } from '../../mothers/constants';
 
 export class CreateUserUserCaseInputMother {
   static any({
-    username = ConstantsMother.USERNAME,
+    name = ConstantsMother.NAME,
     password = ConstantsMother.PASSWORD,
   }: {
-    username?: string;
+    name?: string;
     password?: string;
   } = {}) {
-    return new CreateUserUseCaseInput(username, password);
+    return new CreateUserUseCaseInput(name, password);
   }
 }
